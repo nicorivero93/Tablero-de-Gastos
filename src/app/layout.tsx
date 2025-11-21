@@ -8,7 +8,7 @@ import MainNav from '@/components/main-nav';
 
 export const metadata: Metadata = {
   title: 'BudgetWise',
-  description: 'Manage your expenses with ease.',
+  description: 'Administra tus gastos con facilidad.',
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

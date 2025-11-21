@@ -10,10 +10,10 @@ export default function ExpensesPage() {
     
     return (
         <>
-            <PageHeader title="Expenses">
+            <PageHeader title="Gastos">
                 <Button>
                     <PlusCircle className="mr-2" />
-                    Add Expense
+                    Añadir Gasto
                 </Button>
             </PageHeader>
             <main className="flex-1 space-y-4 p-4 sm:p-6">
@@ -21,11 +21,11 @@ export default function ExpensesPage() {
                     <Table>
                         <TableHeader>
                             <TableRow>
-                                <TableHead>Description</TableHead>
-                                <TableHead>Category</TableHead>
-                                <TableHead>Date</TableHead>
-                                <TableHead>Tags</TableHead>
-                                <TableHead className="text-right">Amount</TableHead>
+                                <TableHead>Descripción</TableHead>
+                                <TableHead>Categoría</TableHead>
+                                <TableHead>Fecha</TableHead>
+                                <TableHead>Etiquetas</TableHead>
+                                <TableHead className="text-right">Monto</TableHead>
                             </TableRow>
                         </TableHeader>
                         <TableBody>

@@ -8,16 +8,16 @@ import { Plus, Tag as TagIcon } from "lucide-react";
 export default function TagsPage() {
     return (
         <>
-            <PageHeader title="Tags" />
+            <PageHeader title="Etiquetas" />
             <main className="flex-1 space-y-4 p-4 sm:p-6">
                 <Card>
                     <CardHeader>
-                        <CardTitle>Manage Tags</CardTitle>
+                        <CardTitle>Gestionar Etiquetas</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
                         <div className="flex gap-2">
-                            <Input placeholder="New tag name" />
-                            <Button><Plus className="mr-2 h-4 w-4" /> Add</Button>
+                            <Input placeholder="Nombre de nueva etiqueta" />
+                            <Button><Plus className="mr-2 h-4 w-4" /> Añadir</Button>
                         </div>
                         <div className="border rounded-md">
                             {tags.map((tag, index) => (
@@ -26,7 +26,7 @@ export default function TagsPage() {
                                         <TagIcon className="h-5 w-5 text-muted-foreground" />
                                         <span className="font-medium">{tag.name}</span>
                                     </div>
-                                    <Button variant="ghost" size="sm">Edit</Button>
+                                    <Button variant="ghost" size="sm">Editar</Button>
                                 </div>
                             ))}
                         </div>

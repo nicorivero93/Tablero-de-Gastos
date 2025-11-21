@@ -8,16 +8,16 @@ import { Plus } from "lucide-react";
 export default function CategoriesPage() {
     return (
         <>
-            <PageHeader title="Categories" />
+            <PageHeader title="Categorías" />
             <main className="flex-1 space-y-4 p-4 sm:p-6">
                 <Card>
                     <CardHeader>
-                        <CardTitle>Manage Categories</CardTitle>
+                        <CardTitle>Gestionar Categorías</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
                         <div className="flex gap-2">
-                            <Input placeholder="New category name" />
-                            <Button><Plus className="mr-2 h-4 w-4" /> Add</Button>
+                            <Input placeholder="Nombre de nueva categoría" />
+                            <Button><Plus className="mr-2 h-4 w-4" /> Añadir</Button>
                         </div>
                         <div className="border rounded-md">
                             {categories.map((category, index) => (
@@ -26,7 +26,7 @@ export default function CategoriesPage() {
                                         <category.icon className="h-5 w-5 text-muted-foreground" />
                                         <span className="font-medium">{category.name}</span>
                                     </div>
-                                    <Button variant="ghost" size="sm">Edit</Button>
+                                    <Button variant="ghost" size="sm">Editar</Button>
                                 </div>
                             ))}
                         </div>

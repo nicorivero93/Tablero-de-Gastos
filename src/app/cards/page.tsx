@@ -9,10 +9,10 @@ import { cn } from "@/lib/utils";
 export default function CardsPage() {
   return (
     <>
-      <PageHeader title="Credit Cards">
+      <PageHeader title="Tarjetas de Crédito">
         <Button>
           <PlusCircle className="mr-2" />
-          Add Card
+          Añadir Tarjeta
         </Button>
       </PageHeader>
       <main className="flex-1 space-y-4 p-4 sm:p-6">
@@ -41,11 +41,11 @@ export default function CardsPage() {
               <CardFooter className="flex flex-col items-start gap-2">
                 <div className="w-full">
                   <div className="flex justify-between text-sm">
-                    <span className="font-medium">Balance</span>
+                    <span className="font-medium">Saldo</span>
                     <span>${card.balance.toLocaleString()}</span>
                   </div>
                   <div className="flex justify-between text-sm text-muted-foreground">
-                    <span>Limit</span>
+                    <span>Límite</span>
                     <span>${card.limit.toLocaleString()}</span>
                   </div>
                 </div>
